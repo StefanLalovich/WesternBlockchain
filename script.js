@@ -1,12 +1,25 @@
-'use strict';
+// Updated script.js for interactive animations and effects
 
-// Function to handle form submission
-const handleSubmit = async (event) => {
+// Function to add smooth scrolling
+function smoothScroll(target) {
+    document.querySelector(target).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+// Function for interactive animations
+function createParticleEffects() {
+    // Example implementation for creating particle effects
+}
+
+// Function to handle form submissions
+function handleFormSubmission(event) {
     event.preventDefault();
-    const email = document.getElementById('email').value;
-    // You can add code here to send the email to your server
-    console.log(`Email collected: ${email}`);
-};
+    // Process form data here
+}
 
-// Event listener for the form
-document.getElementById('emailForm').addEventListener('submit', handleSubmit);
+// Attach event listeners for form handling
+document.querySelector('form').addEventListener('submit', handleFormSubmission);
+
+// Initialize animations and effects
+createParticleEffects();
