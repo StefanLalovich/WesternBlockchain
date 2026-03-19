@@ -3,53 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Western Blockchain</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blockchain Landing Page</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f7f7f7;
+            margin: 0;
             font-family: Arial, sans-serif;
-        }
-        img {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin: 20px 0;
-        }
-        form {
-            margin-top: 20px;
-        }
-        input[type="email"] {
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 300px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            background-color: #007bff;
+            background: linear-gradient(120deg, #3a6073, #3a6073);
             color: white;
+            overflow: hidden;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideIn 1s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); }
+            to { transform: translateY(0); }
+        }
+
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background: #f39c12;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #e67e22;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <img src="https://example.com/path-to-western-universities-logo.png" alt="Western Universities Logo">
-    <h1>Coming Soon</h1>
-    <form action="#" method="POST">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Notify Me</button>
-    </form>
+    <header>
+        <h1>Welcome to the Blockchain Revolution</h1>
+    </header>
+    <div class="content">
+        <p>Join us in exploring the future of decentralized technology and financial freedom.</p>
+        <button class="button">Get Started</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Western Blockchain</p>
+    </footer>
 </body>
 </html>
